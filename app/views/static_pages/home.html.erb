@@ -2,9 +2,8 @@
 <p>Find me in app/views/static_pages/home.html.erb</p>-->
 <% if user_signed_in?  %>
     <%= link_to 'ホーム', static_pages_home_path %>
-    <%= link_to 'サインイン' , new_user_session_path %>
-    <%= link_to 'ユーザ登録' , new_user_registration_path %>
-   
+    <div><br>こんにちは、</div><br>
+    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
     <hr>
     <h1>HOME PAGE</h1>
     <%= link_to '本一覧をみる', new_book_path %>
